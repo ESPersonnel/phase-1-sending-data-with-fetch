@@ -13,7 +13,7 @@ function submitData( name, email ) {
       email: email
     } )
   } )
-    .then( response => response.json() )
+    .then( response => response.json() ) // convert to json
     .then( data => {
       let id = data.id // get the id from the response
       document.body.innerHTML += `<p>${id}</p>` // append the id to the DOM
